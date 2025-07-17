@@ -49,7 +49,7 @@ map("i", "<C-s>", "<cmd>w<cr>", { desc = "Save file" })
 map("n", "<C-z>", "u", { desc = "Undo" })
 map("n", "<C-y>", "<C-r>", { desc = "Redo" })
 
--- Duplicate line or selection
+-- Duplicate line or selection ( conflict with scroll down)
 map({ "n", "i" }, "<C-d>", "yyp", { desc = "Duplicate current line" })
 -- map("i", "<C-d>", "yyp", { desc = "Duplicate current line" })
 map("v", "<C-d>", "y'>p", { desc = "Duplicate selection" })
