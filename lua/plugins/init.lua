@@ -14,7 +14,7 @@ return {
 	},
 
 	{
-		"supermaven-inc/supermaven-nvim",
+		"supermaven-inc/supermaven-nvim", -- TODO : change this Plugin due to pivacy issues with this plugin where reported
 		lazy = false,
 		opts = require "configs.supermaven",
 	},
