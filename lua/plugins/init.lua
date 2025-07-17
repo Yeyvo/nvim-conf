@@ -27,16 +27,6 @@ return {
 	-- test new blink
 	-- { import = "nvchad.blink.lazyspec" },
 
-	-- {
-	-- 	"nvim-treesitter/nvim-treesitter",
-	-- 	opts = {
-	-- 		ensure_installed = {
-	-- 			"vim", "lua", "vimdoc",
-	--      "html", "css"
-	-- 		},
-	-- 	},
-	-- },
-
 	-- Better syntax highlighting
 	{
 		"nvim-treesitter/nvim-treesitter",
@@ -112,5 +102,16 @@ return {
 				additional_vim_regex_highlighting = false,
 			},
 		},
+	},
+	{
+		"NeogitOrg/neogit",
+		lazy = true,
+		cmd = "Neogit",
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+			"sindrets/diffview.nvim",
+			"nvim-telescope/telescope.nvim",
+		},
+		opts = require "configs.neogit",
 	},
 }

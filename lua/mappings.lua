@@ -61,3 +61,11 @@ map("n", "<leader>cr", vim.lsp.buf.references, { desc = "Show references" })
 map("n", "<leader>ci", vim.lsp.buf.hover, { desc = "Show hover information" })
 map("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code actions" })
 map("n", "<leader>cn", vim.lsp.buf.rename, { desc = "Rename symbol" })
+
+-- Plugin mappings
+-- Neogit mappings
+
+map("n", "<leader>gg", "<cmd>Neogit<cr>", { desc = "Open Neogit" })
+map("n", "<leader>gc", "<cmd>Neogit commit<cr>", { desc = "Git commit" })
+map("n", "<leader>gp", "<cmd>Neogit pull<cr>", { desc = "Git pull" })
+map("n", "<leader>gP", "<cmd>Neogit push<cr>", { desc = "Git push" })
